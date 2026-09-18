@@ -23,12 +23,28 @@
 .quote{position:relative;overflow:hidden}.quote:before{content:"";position:absolute;left:0;bottom:0;width:100%;height:6px;background:#ffd400;transform:scaleX(0);transform-origin:left;transition:.4s}.quote:hover:before{transform:scaleX(1)}
 @media(max-width:800px){.collection-nav{grid-template-columns:1fr 1fr}.filter:nth-child(2){border-right:0}.hero h1{line-height:.96}.hero h1 span{margin-top:8px}}
 @media(prefers-reduced-motion:reduce){.ticker-track,.portrait-placeholder:after{animation:none}}
+
+/* Art direction pass: scale + readability */
+h1,h2,.phrase,.stamp,.year,.carry-title,.testimony-title{letter-spacing:.018em!important}
+.hero h1{line-height:1.02!important}.hero h1 span{margin-top:18px!important}
+.side-word{position:absolute;left:2.5%;bottom:8%;writing-mode:vertical-rl;transform:rotate(180deg);font:900 clamp(42px,5vw,72px)/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.07em;color:#777;opacity:.72;z-index:2}
+.ticker{background:#ffd400;height:70px;display:flex;align-items:center}.ticker-track span{font-size:clamp(31px,3.2vw,49px)!important;line-height:1!important;padding:10px 0!important;letter-spacing:.06em!important;word-spacing:.32em!important}
+.phrase-wall .phrase{display:block;text-decoration:none;cursor:pointer;font-size:clamp(56px,8vw,118px);line-height:1.02!important;letter-spacing:.018em!important;margin:28px 0!important}.phrase-wall .phrase:after{content:" ↗";font-size:.28em;vertical-align:top;color:#ffd400;-webkit-text-stroke:0}
+.story h2{line-height:1.02!important;letter-spacing:.018em!important}.story h2 span{display:block;margin-top:14px}
+.carry-title{font-size:clamp(70px,10vw,145px);line-height:.9;margin:18px 0 28px}.carry-title span{color:#ffd400}.values{padding-top:75px!important;padding-bottom:75px!important}.values-grid{margin-top:15px!important}.values-grid>div{min-height:235px}
+.testimony-title{line-height:1!important}.testimony-title span{color:#ffd400}.quote b{line-height:1.02!important;letter-spacing:.025em}.ellipsis{letter-spacing:.18em;white-space:nowrap;color:#ffd400}
+.join{padding-top:80px!important;padding-bottom:70px!important;min-height:0!important}.join h2{line-height:1!important;letter-spacing:.025em!important;margin-bottom:28px!important}.join .form{align-self:center}
+.manifesto h2{line-height:.98!important;letter-spacing:.025em!important}.manifesto h2 span{display:block;margin-top:10px}
+.footer-stripe{height:58px;background:#ffd400;color:#000;overflow:hidden;display:flex;align-items:center}.footer-stripe>div{width:max-content;white-space:nowrap;font:900 26px/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.07em;animation:tickerMove 22s linear infinite}
+footer{padding-top:48px!important;padding-bottom:38px!important}
+.logo-slot{display:inline-flex;flex-direction:column;width:125px;color:#fff}.logo-slot b{font:900 35px/.8 Impact,"Arial Narrow",sans-serif;letter-spacing:.02em}.logo-slot span{font:900 15px/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.05em}.logo-slot small{font:700 7px Arial;color:#777;letter-spacing:.08em;margin-top:8px}.header-logo{width:112px}.header-logo b{font-size:32px}.header-logo span{font-size:14px}
+@media(max-width:800px){.ticker{height:58px}.ticker-track span{font-size:30px!important}.side-word{font-size:38px}.carry-title{font-size:70px}.values{padding-top:55px!important;padding-bottom:55px!important}.values-grid>div{min-height:190px}.join{padding-top:60px!important;padding-bottom:55px!important}}
 </style></head>
 <body>
 <div class="bar">JANUARY 2027 — THE HOOD IS COMING. JOIN FOR EARLY ACCESS.</div>
-<header class="nav"><a class="brand" href="#">HOOD<small>TENDENCIES</small></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="navlinks"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#testimonies">HOOD TESTIMONIES</a><a href="#join">JOIN THE HOOD</a></nav></header>
+<header class="nav"><a class="logo-slot header-logo" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="navlinks"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#testimonies">HOOD TESTIMONIES</a><a href="#join">JOIN THE HOOD</a></nav></header>
 <section class="hero"><div class="copy"><div class="eyebrow">REAL PEOPLE. REAL STORIES. REAL TENDENCIES.</div><h1>HOOD UP.<br><span>HEAD HIGH.</span></h1><p class="lead">Your story is already speaking. Wear something that says it with you.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
-  <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="side-word" aria-hidden="true">FAMILY CAPSULE</div>
   <div class="portrait-frame">
     <div class="photo-label">THE FAMILY CAPSULE — JAN 2027</div>
     <div class="portrait-placeholder"><span>REAL PEOPLE.<br>REAL STORIES.</span><small>CAMPAIGN PHOTOGRAPHY COMING</small></div>
@@ -48,15 +64,15 @@
 <div class="product" data-kind="faith family"><div class="card">FAITH.<br>FIRE.<br>FAMILY.</div><h3>Family Capsule</h3><p>LIMITED FIRST RELEASE</p></div>
 </div></section>
 <section class="phrase-wall">
-  <div class="phrase goldtxt">PRAYED FOR THIS.</div>
-  <div class="phrase outline">WALKIN' IN IT.</div>
-  <div class="phrase">GRACE IS MY BUSINESS CARD.</div>
-  <div class="phrase goldtxt">TOO CHOSEN TO CHASE.</div>
-  <div class="phrase outline">GRIEF 2 GREATNESS.</div>
+  <a class="phrase goldtxt" href="#shop" data-phrase="Prayed for this.">PRAYED FOR THIS.</a>
+  <a class="phrase outline" href="#shop" data-phrase="Walkin’ in it.">WALKIN’ IN IT.</a>
+  <a class="phrase" href="#shop" data-phrase="Grace is my business card.">GRACE IS MY BUSINESS CARD.</a>
+  <a class="phrase goldtxt" href="#shop" data-phrase="Too chosen to chase.">TOO CHOSEN TO CHASE.</a>
+  <a class="phrase outline" href="#shop" data-phrase="Grief 2 Greatness.">GRIEF 2 GREATNESS.</a>
 </section>
 <section id="story" class="section story"><div class="year">2014</div><div><div class="eyebrow">OUR STORY</div><h2>STARTED AS A CONVERSATION.<br><span>BECAME A LEGACY.</span></h2><p>Hood Tendencies began as a cultural wink—a phrase born in conversation that grew into something deeper: a reflection of strength, survival and sacred pride. Today, it is a platform for family, faith and generational voice.</p><p>Every piece is designed around real people and real experiences. The message is not manufactured. The story comes first.</p></div></section>
 <section class="values section">
- <div class="eyebrow" style="color:#111111">WHAT WE CARRY</div>
+ <div class="eyebrow" style="color:#111111">THE VALUES BEHIND THE BRAND</div><h2 class="carry-title">WHAT WE <span>CARRY.</span></h2>
  <div class="values-grid">
   <div><b>01</b><h3>LEGACY</h3><p>We honor the voices and experiences that raised us.</p></div>
   <div><b>02</b><h3>AUTHENTICITY</h3><p>Our pieces reflect real people, not made-up personas.</p></div>
@@ -65,7 +81,7 @@
   <div><b>05</b><h3>UNITY</h3><p>We create with every age, background and story in mind.</p></div>
  </div>
 </section>
-<section id="testimonies" class="section"><div class="head"><div><div class="eyebrow" style="color:#111111">HOOD TESTIMONIES</div><h2>THE PEOPLE BEHIND<br>THE PIECES.</h2></div><p>Not models playing a part. Family, community and real voices telling you why their words matter.</p></div><div class="stories"><div class="quote"><b>“PEACE & LONGEVITY.”</b><small>BIG BROTHER — STORY COMING SOON</small></div><div class="quote"><b>“GRANDMA SAYS...”</b><small>MOM — STORY COMING SOON</small></div><div class="quote"><b>“THIS HOOD HAS A STORY.”</b><small>FAMILY CAPSULE — COMING SOON</small></div></div></section>
+<section id="testimonies" class="section"><div class="head"><div><div class="eyebrow" style="color:#111111">HOOD TESTIMONIES</div><h2 class="testimony-title">THE <span>PEOPLE</span> BEHIND<br>THE <span>PIECES.</span></h2></div><p>Not models playing a part. Family, community and real voices telling you why their words matter.</p></div><div class="stories"><div class="quote"><b>“PEACE & LONGEVITY.”</b><small>BIG BROTHER — STORY COMING SOON</small></div><div class="quote"><b>“GRANDMA SAYS<span class="ellipsis">...</span>”</b><small>MOM — STORY COMING SOON</small></div><div class="quote"><b>“THIS HOOD HAS A STORY.”</b><small>FAMILY CAPSULE — COMING SOON</small></div></div></section>
 <section class="section" style="background:#111;color:#fff;padding-top:65px;padding-bottom:65px">
 <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center">
 <div><div class="eyebrow">LAUNCH COUNTDOWN</div><h2 style="font-size:clamp(58px,7vw,96px);line-height:.84;margin:18px 0">JANUARY 2027.<br>WE'RE COMING.</h2><p style="color:#aaa;max-width:620px;line-height:1.7">The first Hood Tendencies drop is being built with the people who inspired it. Family samples, stories, product photography and early-access details are coming next.</p></div>
@@ -73,7 +89,12 @@
 </div></section>
 <section class="manifesto"><div class="eyebrow" style="color:#111111">MORE THAN A HOODIE.</div><h2>A MESSAGE.<br>A MEMORY.<br><span>A MOVEMENT.</span></h2></section>
 <section id="join" class="section join"><div><div class="eyebrow">JOIN THE HOOD</div><h2>BE FIRST<br>IN LINE.</h2><p>Get early access to exclusive drops, family capsule releases, Hood Testimonies and behind-the-scenes stories.</p></div><form class="form" onsubmit="event.preventDefault();this.classList.add('done')"><input required placeholder="First name"><input type="email" required placeholder="Email address"><button class="btn">JOIN THE HOOD</button><p class="thanks">YOU'RE IN. HOOD UP. HEAD HIGH.</p></form></section>
-<footer><div><div class="brand">HOOD<small>TENDENCIES</small></div><p>Real People. Real Stories. Real Tendencies.</p></div><div><strong>EXPERIENCE</strong><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#testimonies">Hood Testimonies</a></div><div><strong>THE MESSAGE</strong><p>This Hood Has a Story.<br>Hood Up. Head High.</p></div></footer>
+<div class="footer-stripe"><div>HOOD UP. HEAD HIGH. • THIS HOOD HAS A STORY. • JOIN THE MOVEMENT. ROCK THE MESSAGE. • HOOD UP. HEAD HIGH. • THIS HOOD HAS A STORY. •</div></div>
+<footer>
+<div><div class="logo-slot"><b>HOOD</b><span>TENDENCIES</span><small>OFFICIAL LOGO ASSET GOES HERE</small></div><p>Real People. Real Stories. Real Tendencies.</p></div>
+<div><strong>EXPLORE</strong><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#testimonies">Hood Testimonies</a><a href="#join">Join the Hood</a></div>
+<div><strong>CONTACT</strong><a href="mailto:hello@hoodtendencies.net">hello@hoodtendencies.net</a><p>Questions, collaborations, wholesale and Hood Testimonies.</p></div>
+</footer>
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.animate([{opacity:.15,transform:'translateY(28px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)',fill:'forwards'})}),{threshold:.12});document.querySelectorAll('.head,.story>div,.quote,.values-grid>div,.manifesto h2').forEach(el=>io.observe(el));
 const nav=document.querySelector('.nav'), menu=document.querySelector('.menubtn');
