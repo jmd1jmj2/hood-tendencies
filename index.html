@@ -27,7 +27,7 @@
 /* Art direction pass: scale + readability */
 h1,h2,.phrase,.stamp,.year,.carry-title,.testimony-title{letter-spacing:.018em!important}
 .hero h1{line-height:1.02!important}.hero h1 span{margin-top:18px!important}
-.side-word{position:absolute;left:2.5%;bottom:8%;writing-mode:vertical-rl;transform:rotate(180deg);font:900 clamp(42px,5vw,72px)/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.07em;color:#777;opacity:.72;z-index:2}
+.side-word{white-space:nowrap;position:absolute;left:2.5%;bottom:8%;writing-mode:vertical-rl;transform:rotate(180deg);font:900 clamp(42px,5vw,72px)/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.07em;color:#777;opacity:.72;z-index:2}
 .ticker{background:#ffd400;height:70px;display:flex;align-items:center}.ticker-track span{font-size:clamp(31px,3.2vw,49px)!important;line-height:1!important;padding:10px 0!important;letter-spacing:.06em!important;word-spacing:.32em!important}
 .phrase-wall .phrase{display:block;text-decoration:none;cursor:pointer;font-size:clamp(56px,8vw,118px);line-height:1.02!important;letter-spacing:.018em!important;margin:28px 0!important}.phrase-wall .phrase:after{content:""}
 .story h2{line-height:1.02!important;letter-spacing:.018em!important}.story h2 span{display:block;margin-top:14px}
@@ -96,6 +96,10 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
 .image-tile:before{display:none!important}.image-tile.light{background:#fff!important;color:#111!important;border:1px solid #d7d7d7}.image-tile.gray{background:#a9a9aa!important;color:#111!important}.image-tile.dark{background:#333!important;color:#fff!important}.image-tile strong{font-size:clamp(31px,3.4vw,50px)!important;line-height:.95!important}.image-tile small{font-size:11px!important}
 .wix-footer{background:#222!important;color:#fff!important;padding:55px 5vw!important;display:grid!important;grid-template-columns:.9fr 1fr 1fr 1.55fr!important;gap:55px!important;border-top:0!important}.wix-footer>div{display:flex;flex-direction:column;align-items:flex-start}.wix-footer strong{font:900 clamp(28px,2.5vw,40px)/1 Impact,"Arial Narrow",sans-serif!important;color:#ffd400!important;letter-spacing:.035em!important;margin-bottom:25px!important}.wix-footer a,.wix-footer span,.wix-footer p{font-size:14px!important;line-height:1.6!important;color:#cfcfcf!important;text-decoration:none!important;margin:5px 0!important}.footer-wordmark{width:auto!important}.footer-wordmark b{font-size:46px!important}.footer-wordmark span{font-size:18px!important;color:#ffd400!important}.footer-join form{width:100%;display:grid;grid-template-columns:1fr auto;margin:13px 0}.footer-join input{min-width:0;background:transparent;border:0;border-bottom:1px solid #aaa;color:#fff;padding:14px 4px;font-size:14px}.footer-join button{background:#ffd400;border:0;padding:0 18px;font-weight:900}.footer-email{font-size:12px!important}.sayings-strip{height:88px!important}.sayings-track span{font-size:clamp(29px,3vw,44px)!important;letter-spacing:.045em!important}
 @media(max-width:800px){.brand-bridge{grid-template-columns:1fr;gap:18px}.brand-bridge div+div{border-left:0;border-top:1px solid #aaa;padding:18px 0 0}.wix-footer{grid-template-columns:1fr 1fr!important;gap:38px!important}.footer-join{grid-column:1/-1}}
+
+.hero-photo{background-image:linear-gradient(90deg,rgba(5,5,5,.48),rgba(5,5,5,.08)),url('https://images.unsplash.com/photo-1754239435796-bda6e8423b85?auto=format&fit=crop&w=1600&q=85')!important;background-size:cover!important;background-position:center!important;display:flex!important;align-items:flex-end!important;justify-content:flex-start!important}.hero-photo:after{display:none!important}.hero-photo-copy{padding:0 0 42px 38px;display:flex;flex-direction:column;align-items:flex-start}.hero-photo-copy b{font:900 clamp(48px,6vw,88px)/.88 Impact,"Arial Narrow",sans-serif;color:#fff;letter-spacing:.035em;text-shadow:0 3px 18px rgba(0,0,0,.45)}.hero-photo-copy b:last-child{color:#ffd400;margin-top:10px}
+.side-word{white-space:nowrap!important;font-size:clamp(72px,8vw,118px)!important;line-height:.82!important;letter-spacing:.045em!important;max-height:none!important}
+@media(max-width:800px){.side-word{font-size:55px!important}.hero-photo-copy{padding:0 0 28px 24px}.hero-photo-copy b{font-size:48px}}
 </style></head>
 <body>
 <div class="bar">JANUARY 2027 — THE HOOD IS COMING. JOIN FOR EARLY ACCESS.</div>
@@ -117,7 +121,7 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
   <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="side-word" aria-hidden="true">FAMILY CAPSULE</div>
   <div class="portrait-frame">
     <div class="photo-label">THE FAMILY CAPSULE — JAN 2027</div>
-    <div class="portrait-placeholder"><span>HOOD UP.<br>HEAD HIGH.</span><small>CINEMATIC CAMPAIGN IMAGE • STREET • NIGHT • BLACK HOODIE</small></div>
+    <div class="portrait-placeholder hero-photo" role="img" aria-label="Hooded person walking through city lights at night"><div class="hero-photo-copy"><b>HOOD UP.</b><b>HEAD HIGH.</b></div></div>
   </div>
   <div class="stamp">THIS HOOD<br><span>HAS A STORY.</span></div>
 </div></section>
