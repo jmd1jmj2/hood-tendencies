@@ -100,13 +100,22 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
 .hero-photo{background-image:linear-gradient(90deg,rgba(5,5,5,.48),rgba(5,5,5,.08)),url('https://images.unsplash.com/photo-1754239435796-bda6e8423b85?auto=format&fit=crop&w=1600&q=85')!important;background-size:cover!important;background-position:center!important;display:flex!important;align-items:flex-end!important;justify-content:flex-start!important}.hero-photo:after{display:none!important}.hero-photo-copy{padding:0 0 42px 38px;display:flex;flex-direction:column;align-items:flex-start}.hero-photo-copy b{font:900 clamp(48px,6vw,88px)/.88 Impact,"Arial Narrow",sans-serif;color:#fff;letter-spacing:.035em;text-shadow:0 3px 18px rgba(0,0,0,.45)}.hero-photo-copy b:last-child{color:#ffd400;margin-top:10px}
 .side-word{white-space:nowrap!important;font-size:clamp(72px,8vw,118px)!important;line-height:.82!important;letter-spacing:.045em!important;max-height:none!important}
 @media(max-width:800px){.side-word{font-size:55px!important}.hero-photo-copy{padding:0 0 28px 24px}.hero-photo-copy b{font-size:48px}}
+
+/* Composition reset — brand asset reserved, no invented logo */
+.exact-logo-slot{border-right:1px solid #555!important;padding-right:30px!important;overflow:hidden}.exact-logo-slot span{font:700 16px/1 Arial,sans-serif!important;letter-spacing:.18em!important;color:#fff!important;white-space:nowrap}.wix-wordmark,.hood-icon{display:none!important}
+.hero-photo{min-height:640px!important;background-position:center!important}.hero-photo-copy{display:none!important}
+.clean-hero-title{font:900 clamp(58px,7vw,106px)/.9 Impact,"Arial Narrow",sans-serif!important;letter-spacing:.02em!important}.clean-hero-title span{color:#ffd400}
+.side-word{writing-mode:horizontal-tb!important;transform:none!important;white-space:nowrap!important;width:100%!important;max-width:100%!important;font-size:clamp(48px,6.3vw,96px)!important;line-height:.9!important;letter-spacing:.01em!important;overflow:hidden!important;text-align:center!important;padding:24px 2vw!important}
+.story-year,.year-2014,[class*="story"] .year{writing-mode:vertical-rl!important;transform:rotate(180deg)!important;line-height:.8!important;white-space:nowrap!important}
+.brand-bridge{padding-top:42px!important;padding-bottom:42px!important}
+@media(max-width:800px){.hero-photo{min-height:480px!important}.side-word{font-size:42px!important}.story-year,.year-2014,[class*="story"] .year{writing-mode:horizontal-tb!important;transform:none!important}}
+
+.footer-logo-slot{font:700 16px/1.2 Arial,sans-serif;letter-spacing:.18em;color:#fff;border:1px solid #555;padding:18px 20px;display:inline-block;white-space:nowrap}
 </style></head>
 <body>
 <div class="bar">JANUARY 2027 — THE HOOD IS COMING. JOIN FOR EARLY ACCESS.</div>
 <header class="nav"><a class="header-wordmark" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="wix-nav">
-  <a class="wix-brand" href="#" aria-label="Hood Tendencies home">
-    <span class="wix-wordmark"><b>HOOD</b><strong>TENDENCIES</strong></span>
-  </a>
+  <a class="wix-brand exact-logo-slot" href="#" aria-label="Hood Tendencies home"><span>HOOD TENDENCIES</span></a>
   <div class="navlinks wix-links">
     <a class="active" href="#">HOME</a>
     <a href="#shop">SHOP</a>
@@ -117,11 +126,11 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
   <div class="nav-actions"><span class="brand-select">Hood Tendencies <b>⌄</b></span><a class="cart" href="#shop" aria-label="Shopping bag">♧ <span>0</span></a></div>
   <button class="menu" aria-label="Open menu">MENU</button>
  </nav></header>
-<section class="hero"><div class="copy"><h1>HOOD UP.<br><span>HEAD HIGH.</span></h1><p class="lead">Wear the message. Carry the story. Keep your head high.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
+<section class="hero"><div class="copy"><h1 class="clean-hero-title">THIS HOOD<br><span>HAS A STORY.</span></h1><p class="lead">Wear the message. Carry the story. Keep your head high.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
   <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="side-word" aria-hidden="true">FAMILY CAPSULE</div>
   <div class="portrait-frame">
     <div class="photo-label">THE FAMILY CAPSULE — JAN 2027</div>
-    <div class="portrait-placeholder hero-photo" role="img" aria-label="Hooded person walking through city lights at night"><div class="hero-photo-copy"><b>HOOD UP.</b><b>HEAD HIGH.</b></div></div>
+    <div class="portrait-placeholder hero-photo" role="img" aria-label="Back-facing person in a black hoodie walking through warm city lights"></div>
   </div>
   <div class="stamp">THIS HOOD<br><span>HAS A STORY.</span></div>
 </div></section>
@@ -134,7 +143,7 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
 </div><div class="products">
 <div class="product" data-kind="signature"><div class="card">HOOD UP.<br>HEAD HIGH.</div><h3>Signature Pullover</h3><p>LAUNCHING JANUARY 2027</p></div>
 <div class="product" data-kind="signature"><div class="card">THIS HOOD<br>HAS A STORY.</div><h3>Story Zip Hoodie</h3><p>LAUNCHING JANUARY 2027</p></div>
-<div class="product" data-kind="faith family"><div class="card">FAITH.<br>FIRE.<br>FAMILY.</div><h3>Family Capsule</h3><p>LIMITED FIRST RELEASE</p></div>
+<div class="product" data-kind="faith family"><div class="card">FAITH.<br>FIRE.<br>FAMILY.</div><h3>FAMILY CAPSULE</h3><p>LIMITED FIRST RELEASE</p></div>
 </div></section>
 <section class="editorial-doors" aria-label="Explore Hood Tendencies">
    <a href="#shop" class="door door-new"><div class="door-photo"><span>CAMPAIGN IMAGE</span></div><div class="door-card"><small>01 / THE DROP</small><h3>SHOP<br>NEW ARRIVALS</h3></div></a>
@@ -150,7 +159,7 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
 <section id="story" class="section story"><div class="year">2014</div><div><div class="eyebrow">OUR STORY</div><h2>STARTED AS A CONVERSATION.<br><span>BECAME A LEGACY.</span></h2><p>Every piece is designed around real people and real experiences. The message is not manufactured. The story comes first.</p><div class="canonical-story">
     <p><strong>Hood Tendencies</strong> began as a conversation—and a cultural wink. The phrase was born in 2014 during a lighthearted exchange between myself, Jaronika Dancy, and a former co-worker. What started as a play on slang became something much deeper: a reflection of the strength, survival, and sacred pride woven into our communities.</p>
     <p>As a 44-year-old widowed mother of <strong>Jeremiah Jones (18)</strong> and one of five children raised by <strong>Patricia and the late Jerome Dancy</strong>, I’ve witnessed the power of legacy firsthand. In 2024, I reignited this vision not just as a clothing brand, but as a platform for family, faith, and generational voice.</p>
-    <p><strong>Hood Tendencies</strong> isn’t about fashion trends—it’s about <strong>fashion with testimony.</strong> Every piece represents someone’s story. From my 66-year-old mother to my teenage son, our <strong>Family Capsule Collection</strong> features custom hoodies linked to real voices, each answering:</p>
+    <p><strong>Hood Tendencies</strong> isn’t about fashion trends—it’s about <strong>fashion with testimony.</strong> Every piece represents someone’s story. From my 66-year-old mother to my teenage son, our <strong>FAMILY CAPSULE Collection</strong> features custom hoodies linked to real voices, each answering:</p>
     <blockquote>“WHY DO YOU HAVE<br><span>HOOD TENDENCIES?</span>”</blockquote>
     <p class="story-close">This brand honors where we come from—and reminds us who we’re becoming.</p>
   </div></div></section>
@@ -184,7 +193,7 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
   </div><div class="testimony-story">
    <div class="testimony-manifesto">REAL PEOPLE.<br>REAL STORIES.<br><span>REAL TENDENCIES.</span></div>
    <div class="testimony-copy">
-    <p><em>The Family Capsule Collection</em> is where Hood Tendencies began. It’s more than a line of hoodies—it’s a living legacy. Each one featured here was designed in collaboration with someone from my family, and every quote, color, and fit reflects who they are and what they’ve lived through.</p>
+    <p><em>The FAMILY CAPSULE Collection</em> is where Hood Tendencies began. It’s more than a line of hoodies—it’s a living legacy. Each one featured here was designed in collaboration with someone from my family, and every quote, color, and fit reflects who they are and what they’ve lived through.</p>
     <p>Some wear zip-ups for comfort, while others prefer pullovers or T-shirt hoodies—but no matter the style, the message is the same: <strong>this hood has a story.</strong></p>
     <p>These videos give you a glimpse into those stories. You’ll hear from my 67-year-old mother, my 18-year-old son, siblings, nieces, and cousins—each sharing their personal testimony of why they chose their saying, what it represents to them, and what it means to <strong>walk with hood tendencies.</strong></p>
     <p>This page is a tribute to the people who shaped this brand and an invitation to connect, reflect, and find the message that resonates with you.</p>
@@ -197,10 +206,10 @@ footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!importan
 <div id="countdown" style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px"></div>
 </div></section>
 <section class="manifesto"><div class="eyebrow" style="color:#111111">MORE THAN A HOODIE.</div><h2>A MESSAGE.<br>A MEMORY.<br><span>A MOVEMENT.</span></h2></section>
-<section id="join" class="section join"><div><div class="eyebrow">JOIN THE HOOD</div><h2>BE FIRST<br>IN LINE.</h2><p>Get early access to exclusive drops, family capsule releases, Hood Testimonies and behind-the-scenes stories.</p></div><form class="form" onsubmit="event.preventDefault();this.classList.add('done')"><input required placeholder="First name"><input type="email" required placeholder="Email address"><button class="btn">JOIN THE HOOD</button><p class="thanks">YOU'RE IN. HOOD UP. HEAD HIGH.</p></form></section>
+<section id="join" class="section join"><div><div class="eyebrow">JOIN THE HOOD</div><h2>BE FIRST<br>IN LINE.</h2><p>Get early access to exclusive drops, FAMILY CAPSULE releases, Hood Testimonies and behind-the-scenes stories.</p></div><form class="form" onsubmit="event.preventDefault();this.classList.add('done')"><input required placeholder="First name"><input type="email" required placeholder="Email address"><button class="btn">JOIN THE HOOD</button><p class="thanks">YOU'RE IN. HOOD UP. HEAD HIGH.</p></form></section>
 
 <section class="soundtrack"><div><small>THE HOOD TENDENCIES SOUNDTRACK</small><strong>FAMILY • FAITH • CULTURE • MOVEMENT</strong></div><div class="player-shell"><span>♫</span><div><b>NOW PLAYING</b><small>PLAYLIST COMING SOON</small></div><button type="button" aria-label="Playlist coming soon">▶</button></div></section><footer class="wix-footer">
- <div class="footer-brand"><div class="footer-wordmark"><b>HOOD</b><span>TENDENCIES</span></div><p>Real People. Real Stories.<br>Real Tendencies.</p></div>
+ <div class="footer-brand"><div class="footer-logo-slot">HOOD TENDENCIES</div><p>Real People. Real Stories.<br>Real Tendencies.</p></div>
  <div><strong>EXPERIENCE</strong><a href="#">Home</a><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#testimonies">Hood Testimonies</a><a href="mailto:hoodtendenciesmedia@gmail.com">Contact</a></div>
  <div><strong>FOLLOW US</strong><span>Facebook</span><span>Instagram</span><span>TikTok</span><span>YouTube</span></div>
  <div class="footer-join"><strong>JOIN OUR HOOD</strong><p>Early access. New drops. Real stories.</p><form onsubmit="event.preventDefault();this.querySelector('button').textContent='YOU’RE IN';"><input type="email" required placeholder="Enter your email"><button>JOIN THE HOOD</button></form><a class="footer-email" href="mailto:hoodtendenciesmedia@gmail.com">hoodtendenciesmedia@gmail.com</a></div>
