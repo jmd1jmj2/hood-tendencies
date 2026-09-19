@@ -29,7 +29,7 @@ h1,h2,.phrase,.stamp,.year,.carry-title,.testimony-title{letter-spacing:.018em!i
 .hero h1{line-height:1.02!important}.hero h1 span{margin-top:18px!important}
 .side-word{position:absolute;left:2.5%;bottom:8%;writing-mode:vertical-rl;transform:rotate(180deg);font:900 clamp(42px,5vw,72px)/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.07em;color:#777;opacity:.72;z-index:2}
 .ticker{background:#ffd400;height:70px;display:flex;align-items:center}.ticker-track span{font-size:clamp(31px,3.2vw,49px)!important;line-height:1!important;padding:10px 0!important;letter-spacing:.06em!important;word-spacing:.32em!important}
-.phrase-wall .phrase{display:block;text-decoration:none;cursor:pointer;font-size:clamp(56px,8vw,118px);line-height:1.02!important;letter-spacing:.018em!important;margin:28px 0!important}.phrase-wall .phrase:after{content:" ↗";font-size:.28em;vertical-align:top;color:#ffd400;-webkit-text-stroke:0}
+.phrase-wall .phrase{display:block;text-decoration:none;cursor:pointer;font-size:clamp(56px,8vw,118px);line-height:1.02!important;letter-spacing:.018em!important;margin:28px 0!important}.phrase-wall .phrase:after{content:""}
 .story h2{line-height:1.02!important;letter-spacing:.018em!important}.story h2 span{display:block;margin-top:14px}
 .carry-title{font-size:clamp(70px,10vw,145px);line-height:.9;margin:18px 0 28px}.carry-title span{color:#ffd400}.values{padding-top:75px!important;padding-bottom:75px!important}.values-grid{margin-top:15px!important}.values-grid>div{min-height:235px}
 .testimony-title{line-height:1!important}.testimony-title span{color:#ffd400}.quote b{line-height:1.02!important;letter-spacing:.025em}.ellipsis{letter-spacing:.18em;white-space:nowrap;color:#ffd400}
@@ -39,26 +39,42 @@ h1,h2,.phrase,.stamp,.year,.carry-title,.testimony-title{letter-spacing:.018em!i
 footer{padding-top:48px!important;padding-bottom:38px!important}
 .logo-slot{display:inline-flex;flex-direction:column;width:125px;color:#fff}.logo-slot b{font:900 35px/.8 Impact,"Arial Narrow",sans-serif;letter-spacing:.02em}.logo-slot span{font:900 15px/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.05em}.logo-slot small{font:700 7px Arial;color:#777;letter-spacing:.08em;margin-top:8px}.header-logo{width:112px}.header-logo b{font-size:32px}.header-logo span{font-size:14px}
 @media(max-width:800px){.ticker{height:58px}.ticker-track span{font-size:30px!important}.side-word{font-size:38px}.carry-title{font-size:70px}.values{padding-top:55px!important;padding-bottom:55px!important}.values-grid>div{min-height:190px}.join{padding-top:60px!important;padding-bottom:55px!important}}
+
+/* depth + scale pass */
+nav{padding:24px 5vw!important;gap:44px!important}.navlinks{gap:clamp(24px,3vw,52px)!important}.navlinks a{font-size:14px!important;letter-spacing:.08em!important;font-weight:900!important}
+.header-wordmark,.footer-wordmark{color:#fff;text-decoration:none;display:flex;flex-direction:column;width:190px}.header-wordmark b,.footer-wordmark b{font:900 50px/.82 Impact,"Arial Narrow",sans-serif;letter-spacing:.035em}.header-wordmark span,.footer-wordmark span{font:900 22px/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.12em;width:100%}.footer-wordmark{width:220px}.footer-wordmark b{font-size:58px}.footer-wordmark span{font-size:25px}
+.eyebrow{font-size:15px!important;letter-spacing:.16em!important;line-height:1.35!important}.hero .eyebrow{font-size:18px!important}.hero p{font-size:18px!important;line-height:1.55!important;max-width:650px!important}.hero h1{line-height:.92!important}.hero h1 span{margin-top:8px!important}
+.side-word{font-size:clamp(58px,7vw,100px)!important;bottom:4%!important;letter-spacing:.08em!important}.photo-label{font-size:12px!important;padding:12px 16px!important}.portrait-frame{left:20%!important;top:8%!important;bottom:6%!important}.portrait-placeholder span{font-size:clamp(38px,4.7vw,70px)!important;line-height:.96!important}.portrait-placeholder small{font-size:11px!important}.stamp{line-height:.92!important}.stamp span{display:block;margin-top:10px}
+.ticker-track span{letter-spacing:.075em!important}.ticker-track span::first-letter{margin-left:20px}
+.section .head p,.story p,.launch p,.join p{font-size:17px!important;line-height:1.65!important}.section .head .eyebrow,.story .eyebrow,#testimonies .eyebrow{font-size:16px!important}
+.shop-intro{font:900 clamp(24px,2.8vw,40px)/1.05 Impact,"Arial Narrow",sans-serif;max-width:850px;margin:-12px 0 35px;letter-spacing:.025em}
+.image-stage{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px;margin:0 0 48px}.image-tile{min-height:310px;background:#111;color:#fff;position:relative;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}.image-tile.tall{min-height:430px}.image-tile:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#191919,#050505 65%);z-index:0}.image-tile>*{position:relative;z-index:1}.image-tile span{position:absolute;top:20px;left:22px;color:#ffd400;font-weight:900}.image-tile strong{font:900 clamp(35px,4vw,62px)/.9 Impact,"Arial Narrow",sans-serif;letter-spacing:.03em}.image-tile small{color:#ffd400;font-weight:900;letter-spacing:.12em;margin-top:15px}.image-tile:hover:before{transform:scale(1.04);transition:.5s}
+.story-deep{max-width:780px!important;margin-top:22px!important}.story h2{line-height:.98!important}.year{margin-bottom:18px!important}
+.values .eyebrow{font-size:16px!important}.carry-title{margin-top:28px!important}.values-grid{align-items:stretch}.values-grid>div{min-height:330px!important;display:flex;flex-direction:column;justify-content:center;padding:38px 28px!important;margin-right:0!important}.values-grid h3{font-size:clamp(34px,3.3vw,50px)!important}.values-grid p{font-size:15px!important}
+#testimonies .head h2{font-size:clamp(68px,9vw,132px)!important;line-height:.92!important}.quote b{font-size:clamp(36px,4vw,58px)!important}.quote small{font-size:11px!important}
+.launch h2,.join h2,.manifesto h2{line-height:1!important}.launch h2 span,.join h2 span{display:block;margin-top:16px}.count{gap:10px!important}.count>div{border-top:5px solid #ffd400!important;padding-top:20px!important}.count strong{font-size:clamp(45px,6vw,88px)!important}.count small{font-size:12px!important;letter-spacing:.15em!important}
+.join{padding-bottom:48px!important}.footer-stripe{height:88px!important;justify-content:center}.footer-stripe>div{font-size:clamp(28px,3.8vw,55px)!important;animation:none!important;white-space:nowrap!important;letter-spacing:.08em!important}
+footer{padding-top:42px!important}.footer-wordmark{margin-bottom:20px}
+@media(max-width:800px){nav{padding:18px 5vw!important}.header-wordmark{width:145px}.header-wordmark b{font-size:40px}.header-wordmark span{font-size:18px}.image-stage{grid-template-columns:1fr}.image-tile,.image-tile.tall{min-height:330px}.portrait-frame{left:12%!important}.side-word{font-size:48px!important}.footer-stripe{height:70px!important}.footer-stripe>div{font-size:25px!important}}
 </style></head>
 <body>
 <div class="bar">JANUARY 2027 — THE HOOD IS COMING. JOIN FOR EARLY ACCESS.</div>
-<header class="nav"><a class="logo-slot header-logo" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="navlinks"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#testimonies">HOOD TESTIMONIES</a><a href="#join">JOIN THE HOOD</a></nav></header>
-<section class="hero"><div class="copy"><div class="eyebrow">REAL PEOPLE. REAL STORIES. REAL TENDENCIES.</div><h1>HOOD UP.<br><span>HEAD HIGH.</span></h1><p class="lead">Your story is already speaking. Wear something that says it with you.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
+<header class="nav"><a class="header-wordmark" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="navlinks"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#testimonies">HOOD TESTIMONIES</a><a href="#join">JOIN THE HOOD</a></nav></header>
+<section class="hero"><div class="copy"><div class="eyebrow">REAL PEOPLE. REAL STORIES. REAL TENDENCIES.</div><h1>HOOD UP.<br><span>HEAD HIGH.</span></h1><p class="lead">Wear the message. Carry the story. Keep your head high.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
   <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="side-word" aria-hidden="true">FAMILY CAPSULE</div>
   <div class="portrait-frame">
     <div class="photo-label">THE FAMILY CAPSULE — JAN 2027</div>
-    <div class="portrait-placeholder"><span>REAL PEOPLE.<br>REAL STORIES.</span><small>CAMPAIGN PHOTOGRAPHY COMING</small></div>
+    <div class="portrait-placeholder"><span>REAL PEOPLE.<br>REAL STORIES.</span><small>FAMILY STORIES • PRODUCT • TESTIMONY</small></div>
   </div>
   <div class="stamp">THIS HOOD<br><span>HAS A STORY.</span></div>
 </div></section>
 <div class="ticker"><div class="ticker-track"><span>FAMILY • FAITH • LEGACY • AUTHENTICITY • RESILIENCE • UNITY • </span><span>FAMILY • FAITH • LEGACY • AUTHENTICITY • RESILIENCE • UNITY • </span></div></div>
-<section id="shop" class="section"><div class="head"><div><div class="eyebrow" style="color:#111111">THE FIRST DROP</div><h2>WEAR THE MESSAGE.</h2></div><p>Built for everyday life. Designed to carry something deeper. The first Hood Tendencies collection arrives January 2027.</p></div><div class="collection-nav">
-<button class="filter active" data-filter="all"><span>01</span> ALL STORIES</button>
-<button class="filter" data-filter="signature"><span>02</span> SIGNATURE</button>
-<button class="filter" data-filter="faith"><span>03</span> FAITH</button>
-<button class="filter" data-filter="family"><span>04</span> FAMILY CAPSULE</button>
-</div>
-<div class="products">
+<section id="shop" class="section"><div class="head"><div><div class="eyebrow" style="color:#111111">THE FIRST DROP</div><h2>WEAR THE MESSAGE.</h2></div><p>Built for everyday life. Designed to carry something deeper. The first Hood Tendencies collection arrives January 2027.</p></div><div class="shop-intro">THE FIRST COLLECTION IS BUILT AROUND THE WORDS WE ACTUALLY LIVE BY.</div>
+<div class="image-stage">
+ <div class="image-tile tall"><span>01</span><strong>CAMPAIGN<br>PORTRAIT</strong><small>FAMILY CAPSULE</small></div>
+ <div class="image-tile"><span>02</span><strong>PRODUCT<br>DETAIL</strong><small>HOODIES + SOCKS</small></div>
+ <div class="image-tile"><span>03</span><strong>STORY<br>IN MOTION</strong><small>REAL PEOPLE. REAL WORDS.</small></div>
+</div><div class="products">
 <div class="product" data-kind="signature"><div class="card">HOOD UP.<br>HEAD HIGH.</div><h3>Signature Pullover</h3><p>LAUNCHING JANUARY 2027</p></div>
 <div class="product" data-kind="signature"><div class="card">THIS HOOD<br>HAS A STORY.</div><h3>Story Zip Hoodie</h3><p>LAUNCHING JANUARY 2027</p></div>
 <div class="product" data-kind="faith family"><div class="card">FAITH.<br>FIRE.<br>FAMILY.</div><h3>Family Capsule</h3><p>LIMITED FIRST RELEASE</p></div>
@@ -89,11 +105,11 @@ footer{padding-top:48px!important;padding-bottom:38px!important}
 </div></section>
 <section class="manifesto"><div class="eyebrow" style="color:#111111">MORE THAN A HOODIE.</div><h2>A MESSAGE.<br>A MEMORY.<br><span>A MOVEMENT.</span></h2></section>
 <section id="join" class="section join"><div><div class="eyebrow">JOIN THE HOOD</div><h2>BE FIRST<br>IN LINE.</h2><p>Get early access to exclusive drops, family capsule releases, Hood Testimonies and behind-the-scenes stories.</p></div><form class="form" onsubmit="event.preventDefault();this.classList.add('done')"><input required placeholder="First name"><input type="email" required placeholder="Email address"><button class="btn">JOIN THE HOOD</button><p class="thanks">YOU'RE IN. HOOD UP. HEAD HIGH.</p></form></section>
-<div class="footer-stripe"><div>HOOD UP. HEAD HIGH. • THIS HOOD HAS A STORY. • JOIN THE MOVEMENT. ROCK THE MESSAGE. • HOOD UP. HEAD HIGH. • THIS HOOD HAS A STORY. •</div></div>
+<div class="footer-stripe"><div>REAL PEOPLE. REAL STORIES. REAL TENDENCIES.</div></div>
 <footer>
-<div><div class="logo-slot"><b>HOOD</b><span>TENDENCIES</span><small>OFFICIAL LOGO ASSET GOES HERE</small></div><p>Real People. Real Stories. Real Tendencies.</p></div>
+<div><div class="footer-wordmark"><b>HOOD</b><span>TENDENCIES</span></div><p>Real People. Real Stories. Real Tendencies.</p></div>
 <div><strong>EXPLORE</strong><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#testimonies">Hood Testimonies</a><a href="#join">Join the Hood</a></div>
-<div><strong>CONTACT</strong><a href="mailto:hello@hoodtendencies.net">hello@hoodtendencies.net</a><p>Questions, collaborations, wholesale and Hood Testimonies.</p></div>
+<div><strong>CONTACT</strong><a href="mailto:hoodtendenciesmedia@gmail.com">hoodtendenciesmedia@gmail.com</a><p>Questions, collaborations, wholesale and Hood Testimonies.</p></div>
 </footer>
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.animate([{opacity:.15,transform:'translateY(28px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)',fill:'forwards'})}),{threshold:.12});document.querySelectorAll('.head,.story>div,.quote,.values-grid>div,.manifesto h2').forEach(el=>io.observe(el));
