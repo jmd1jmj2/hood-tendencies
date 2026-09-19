@@ -78,10 +78,34 @@ footer{padding-top:42px!important}.footer-wordmark{margin-bottom:20px}
 .soundtrack{background:#ffd400;color:#090909;padding:35px 5vw;display:flex;justify-content:space-between;align-items:center;gap:35px}.soundtrack>div:first-child{display:flex;flex-direction:column}.soundtrack small{font-size:10px;font-weight:900;letter-spacing:.14em}.soundtrack strong{font:900 clamp(23px,2.5vw,38px)/1 Impact,"Arial Narrow",sans-serif;letter-spacing:.04em;margin-top:8px}.player-shell{min-width:380px;background:#111;color:#fff;padding:14px 16px;display:grid;grid-template-columns:35px 1fr 44px;align-items:center;gap:12px}.player-shell>span{font-size:25px;color:#ffd400}.player-shell div{display:flex;flex-direction:column}.player-shell b{font-size:11px;letter-spacing:.1em}.player-shell small{color:#aaa;margin-top:4px}.player-shell button{width:40px;height:40px;border-radius:50%;border:0;background:#ffd400;color:#111;font-weight:900}.social-placeholder{display:block;color:#aaa;font-size:12px;margin-top:10px}
 footer{grid-template-columns:1.15fr .8fr .75fr 1.1fr!important;gap:35px!important}
 @media(max-width:800px){.editorial-doors{grid-template-columns:1fr;padding:50px 5vw}.door{min-height:480px}.door:nth-child(2){transform:none}.video-stories{grid-template-columns:1fr;margin:35px 5vw 0}.soundtrack{flex-direction:column;align-items:stretch}.player-shell{min-width:0}footer{grid-template-columns:1fr 1fr!important}}
+
+/* Wix-reference navigation */
+.wix-nav{height:108px!important;background:#202020!important;padding:0 max(4vw,42px)!important;display:grid!important;grid-template-columns:230px 1fr 310px!important;align-items:center!important;gap:20px!important;border-bottom:0!important;position:sticky;top:0;z-index:100}
+.wix-brand{height:100%;display:flex;align-items:center;gap:14px;text-decoration:none;border-right:1px solid #555;padding-right:28px}
+.hood-icon{width:44px;height:44px;border:2px solid #fff;display:grid;place-items:center;position:relative;background:#ffd400;overflow:hidden}.hood-icon:before{content:"";width:27px;height:22px;border-radius:55% 55% 28% 28%;background:#171717;position:absolute;top:9px}.hood-icon:after{content:"";width:9px;height:12px;border-radius:50%;background:#ffd400;position:absolute;top:13px}
+.wix-wordmark{display:flex;flex-direction:column;align-items:flex-start;color:#fff}.wix-wordmark b{font:900 40px/.78 Impact,"Arial Narrow",sans-serif;letter-spacing:.025em}.wix-wordmark strong{font:900 17px/.9 Impact,"Arial Narrow",sans-serif;color:#ffd400;letter-spacing:.035em;margin-top:5px}
+.wix-links{height:100%;display:flex!important;align-items:center;justify-content:center;gap:clamp(25px,2.5vw,48px)!important}.wix-links a{font-family:Arial,sans-serif!important;font-size:13px!important;font-weight:500!important;letter-spacing:.16em!important;color:#fff!important;text-decoration:none!important;white-space:nowrap}.wix-links a.active,.wix-links a:hover{color:#ffd400!important}
+.nav-actions{height:100%;display:grid;grid-template-columns:1fr 100px;align-items:stretch;border-left:1px solid #555}.brand-select{display:flex;align-items:center;justify-content:center;color:#ffd400;font:500 14px Arial;white-space:nowrap}.brand-select b{font-size:20px;margin-left:12px}.cart{background:#ffd400;color:#111;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;font:700 17px Arial}.cart span{font-weight:400}.wix-nav .menu{display:none}
+@media(max-width:1100px){.wix-nav{grid-template-columns:210px 1fr!important}.nav-actions{display:none}.wix-links{gap:22px!important}.wix-links a{font-size:11px!important}}
+@media(max-width:800px){.wix-nav{height:82px!important;grid-template-columns:1fr auto!important;padding:0 5vw!important}.wix-brand{border-right:0}.wix-links{display:none!important}.wix-nav .menu{display:block;background:#ffd400;border:0;padding:12px 15px;font-weight:900}.wix-wordmark b{font-size:33px}.wix-wordmark strong{font-size:14px}.hood-icon{width:38px;height:38px}}
 </style></head>
 <body>
 <div class="bar">JANUARY 2027 — THE HOOD IS COMING. JOIN FOR EARLY ACCESS.</div>
-<header class="nav"><a class="header-wordmark" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="navlinks"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#testimonies">HOOD TESTIMONIES</a><a href="#join">JOIN THE HOOD</a></nav></header>
+<header class="nav"><a class="header-wordmark" href="#"><b>HOOD</b><span>TENDENCIES</span></a><button class="menubtn" aria-label="Open navigation">MENU</button><nav class="wix-nav">
+  <a class="wix-brand" href="#" aria-label="Hood Tendencies home">
+    <span class="hood-icon" aria-hidden="true"><span class="hood-head"></span></span>
+    <span class="wix-wordmark"><b>HOOD</b><strong>TENDENCIES</strong></span>
+  </a>
+  <div class="navlinks wix-links">
+    <a class="active" href="#">HOME</a>
+    <a href="#shop">SHOP</a>
+    <a href="#story">OUR STORY</a>
+    <a href="#testimonies">HOOD TESTIMONIES</a>
+    <a href="#join">JOIN THE HOOD</a>
+  </div>
+  <div class="nav-actions"><span class="brand-select">Hood Tendencies <b>⌄</b></span><a class="cart" href="#shop" aria-label="Shopping bag">♧ <span>0</span></a></div>
+  <button class="menu" aria-label="Open menu">MENU</button>
+ </nav></header>
 <section class="hero"><div class="copy"><div class="eyebrow">REAL PEOPLE. REAL STORIES. REAL TENDENCIES.</div><h1>HOOD UP.<br><span>HEAD HIGH.</span></h1><p class="lead">Wear the message. Carry the story. Keep your head high.</p><a class="btn" href="#join">GET FIRST ACCESS</a></div><div class="visual editorial-hero">
   <div class="hero-lines" aria-hidden="true"><i></i><i></i><i></i></div><div class="side-word" aria-hidden="true">FAMILY CAPSULE</div>
   <div class="portrait-frame">
